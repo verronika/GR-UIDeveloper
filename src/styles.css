@@ -1,1 +1,291 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto/Roboto-Regular.ttf);
+    }
+p{
+    margin-bottom: 0;
+}    
+
+body{
+    background-color: #dbe0e5;
+    font-family: 'Roboto';
+}
+.container-fluid{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+/* <!-- nav styles --> */
+.navColor{
+    background-color: #254cac;
+}
+.btnColorNav{
+    background-color: #506fbc;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navbar-toggler{
+    background-color: #506fbc;
+    float: right;
+}
+.navbar-toggler:focus{
+    box-shadow: none!important;
+}
+.nav-link{
+    color: white;
+    display: flex;
+}
+.nav-link:hover, .nav-link:focus {
+    color: #506fbc;
+}
+.imgMenubets{
+    width: 20px!important;
+    margin-right: 8px;
+}
+.imgMenu{
+    width: inherit!important;
+}
+
+.btnText{
+    color: white;
+    font-size: 15px;
+}
+/* <!--end nav styles --> */
+
+/* <!--Carousel styles --> */
+
+.carousel-caption {
+    position: absolute;
+    bottom: 3rem;
+    left: 5%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: black;
+    text-align: left;
+}
+.h1Style{
+    font-weight: 600;
+}
+.colouryellow{
+    background-color: #ffe682;
+    width: fit-content;
+    font-weight: 600;
+}
+.marg-none{
+    margin-bottom: 2px;
+}
+/* <!-- end Carousel styles --> */
+
+/* <!-- Card styles --> */
+.cardIcons{
+    width: 2rem;
+}
+.cardChevron{
+    margin-top: 3px;
+    width: 1.5rem;
+    float: right;
+}
+.card-title{
+    font-weight: 600;
+}
+.moreLink{
+    font-size: 1rem;
+    text-decoration: none;
+    float: right;
+}
+.horseImg{
+    width: 20px;   
+}
+.horseimgposition{
+    margin-right: 8px;
+}
+.positionHorse{
+    float: right;
+    margin-top: 2px;
+}
+.imgsize{
+    height: 220px;
+}
+/* <!-- end Card styles --> */
+/* <!-- franja Jackpot --> */
+.jackpot-caption {
+    position: absolute;
+    top: 0rem;
+    left: 2rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    
+}
+.pJackpot{
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: -9px;
+    margin-bottom: 0;
+}
+.pWin{
+    color: #ffd11b;
+    font-size: 35px;
+    font-weight: 600;
+    
+}
+/* <!-- end franja Jackpot --> */
+/* <!-- Last block --> */
+
+.imgsizeLastblock{
+    height: 150px;
+}
+
+/* <!-- Last block --> */
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .navbar > .container{
+        display: inline;
+    }
+    .nav-link{
+        display: flex;
+    }
+    .nav-link > p{
+        font-size: 13px;
+    }
+    .btnText{
+        font-size: 13px;
+    }
+    .margTablet{
+        margin-top: 10px;
+    }
+    .carousel-caption {
+        bottom: 10rem;
+    }
+    .jackpot-caption {
+        top: 0rem;        
+    }
+    .pJackpot{
+        font-size: 30px;
+        margin-top: -4px;
+        margin-bottom: 0;
+    }
+    .pWin{
+        font-size: 45px;    
+    }
+    .jackpotFran{
+        padding-bottom: 1.5rem;
+    }
+    .imgsize {
+        height: 256px;
+    }
+   
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .nav-link > p{
+        font-size: 15px;
+    }
+    .btnText{
+        font-size: 15px;
+    }
+    .carousel-caption {
+        bottom: 15rem;
+    }
+    .h1Style{
+        font-weight: 600;
+        font-size: 2.5em;
+    }
+    .colouryellow{
+        font-size: 25px;
+    }
+    .marg-none{
+        margin-bottom: 2px;
+        font-size: 20px;
+    }
+    .cardIcons {
+        width: 1rem;
+    }
+    .pWin{
+        font-size: 68px;    
+    }
+    .imgsizeLastblock {
+        height: 198px;
+    }
+    .imgsize {
+        height: 288px;
+    }
+   
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .navbar > .container{
+        display: inherit;
+    }
+    .imgsizeLastblock {
+        height: 200px;
+    }
+    .h1Style {
+        font-size: 3.5em;
+    }
+    .colouryellow {
+        font-size: 30px;
+    }
+    .marg-none {
+        font-size: 25px;
+    }
+    .pJackpot {
+        font-size: 38px;
+        margin-top: 8px;
+    }
+    .pWin {
+        font-size: 82px;
+    }
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .nav-link > p {
+        font-size: 18px;
+    }
+    .h1Style {
+        font-size: 4.5em;
+    }
+    .carousel-caption {
+        bottom: 23rem;
+    }
+    .pJackpot {
+        font-size: 42px;
+        margin-top: 19px;
+    }
+    .pWin {
+        font-size: 102px;
+    }
+    .imgsizeLastblock {
+        height: 259px;
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .carousel-caption {
+        bottom: 31rem;
+    }
+    .h1Style {
+        font-size: 5.5em;
+    }
+    .colouryellow {
+        font-size: 36px;
+    }
+    .pWin {
+        font-size: 117px;
+    }
+    .pJackpot {
+        font-size: 51px;
+    }
+    .imgsizeLastblock {
+        height: 322px;
+    }
+ }
